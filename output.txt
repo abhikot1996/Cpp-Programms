@@ -1,0 +1,2 @@
+Enter Amount 1: Enter Amount 2: Sum is: 10623536
+Enter any key to exit
