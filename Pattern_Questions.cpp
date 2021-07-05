@@ -275,33 +275,146 @@
 //     return 0;
 // }
 
+// #include<iostream>
+// using namespace std;
+
+// int main()
+// {
+//     for(int r=1;r<=10;r++)
+//     {
+//         for(int c=1;c<=9;c++)
+//         {
+//             if(r<=5)
+//             {
+//                 if(c>=6-r&&c<=4+r)
+//                 cout<<"*";
+//                 else
+//                 cout<<" ";
+//             }
+//             else
+//             {
+//                 if(c>=r-5&&c<=15-r)
+//                 cout<<"*";
+//                 else
+//                 cout<<" ";
+//             }
+//         }
+//         cout<<endl;
+//     }
+// }
+
+// #include<iostream>
+// using namespace std;
+
+// int main()
+// {   for(int r=1;r<=10;r++)
+//     {   for(int c=1;c<=9;c++)
+//         {   if(r<=5)
+//             {   if(c==6-r || c==4+r)
+//                 {cout<<"*";}
+//                 else
+//                 {cout<<" ";}
+//             }
+//             else
+//             {   if(c==r-5 || c==15-r)
+//                 {cout<<"*";}
+//                 else
+//                 {cout<<" ";}
+//             }
+//         }
+//         cout<<endl;
+//     }
+    // return 0
+// }
+
+// #include<iostream>
+// using namespace std;
+
+// int main()
+// {   for(int r=1;r<=10;r++)
+//     {   for(int c=1;c<=9;c++)
+//         {   if(r<=5)
+//             {   if(c<=6-r||c>=4+r)
+//                 {cout<<"*";}
+//                 else
+//                 {cout<<" ";}
+//             }
+//             else
+//             {   if(c<=r-5||c>=15-r)
+//                 {cout<<"*";}
+//                 else
+//                 {cout<<" ";}
+//             }
+//         }
+//         cout<<endl;
+//     }
+//     return 0;
+// }
+
+// #include<iostream>
+// using namespace std;
+
+// int main()
+// {
+//     for(int r=1;r<=5;r++)
+//     {   for(int c=1;c<=9;c++)
+//         {   if(c>=6-r&&c<=10-r)
+//             {   cout<<"*";}
+//             else
+//             {cout<<" ";}
+//         }
+//         cout<<endl;
+//     }
+//     return 0;
+// }
+
+// #include<iostream>
+// using namespace std;
+
+// int main()
+// {   for(int r=1;r<=5;r++)
+//     {   for(int c=1;c<=9;c++)
+//         {   if(c>=6-r&&c<=10-r)
+//             {   if(r==1 || r==5)
+//                 {cout<<"*";}
+//                 else
+//                 {   if(c==6-r||c==10-r)
+//                     {cout<<"*";}
+//                     else
+//                     {cout<<" ";}
+//                 }
+//             }
+//             else
+//             {cout<<" ";}
+//         }
+//         cout<<endl;
+//     }
+//     return 0;
+// }
+
 #include<iostream>
 using namespace std;
 
 int main()
-{
-    for(int r=1;r<=10;r++)
-    {
-        for(int c=1;c<=9;c++)
-        {
-            if(r<=5)
-            {
-                if(c>=6-r&&c<=4+r)
-                cout<<"*";
-                else
-                cout<<" ";
-            }
-            else
-            {
-                if(c>=r-5&&c<=15-r)
-                {
-                    cout<<"*";
+{   for(int r=1;r<=5;r++)
+    {   for(int c=1;c<=9;c++)
+        {   if(c>=6-r&&c<=4+r)
+            {   if(r%2)
+                {   if(c%2)
+                    {cout<<r;}
+                    else
+                    {cout<<" ";}
                 }
                 else
-                cout<<" ";
+                {   if(c%2==0)
+                    {cout<<r;}
+                    else
+                    {cout<<" ";}
+                }
             }
+            else
+            cout<<" ";
         }
         cout<<endl;
     }
-
 }
