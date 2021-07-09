@@ -1,9 +1,8 @@
 #include<iostream>
 using namespace std;
 
-int fact(int n)
+int fact(n)
 {
-    int f;
     for(int r=1;r<=n;r++)
     {
         f=f*r;
@@ -19,7 +18,8 @@ int main()
     {
         for(int j=0;j<=i;j++)
         {
-            cout<<fact(i)/(fact(j)*fact(i-j));
+            cout<<fact(i)/(fact(j)*fact(i-j))
         }
     }
     return 0;
+}
