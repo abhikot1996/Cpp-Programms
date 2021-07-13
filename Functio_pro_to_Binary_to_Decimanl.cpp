@@ -23,10 +23,11 @@ int BinaryToDecimal(int Bno)
 
 int main()
 {
-    int Bno;   
-    cout<<"Enter Binary no:";
+    int Bno; 
+    while(true)  
+    {cout<<"Enter Binary no: ";
     cin>>Bno;  
-    cout<<BinaryToDecimal(Bno);
+    cout<<"Decimal No is: "<<BinaryToDecimal(Bno)<<endl;}
     return 0;
 }
 
