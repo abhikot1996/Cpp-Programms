@@ -11,7 +11,7 @@ void DecimalToBinary(int Dno)
     }
     for(i=i-1;i>=0;i--)
     {
-        cout<<a[i];
+        return a[i];
     }
 }
 
@@ -20,6 +20,6 @@ int main()
     int no;
     cout<<"Enter decimal no: ";
     cin>>no;
-    DecimalToBinary(no);
+    cout<<DecimalToBinary(no);
     return 0;
 }

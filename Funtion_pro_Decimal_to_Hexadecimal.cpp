@@ -1,9 +1,9 @@
-#include<iostream>
+#include<bits/stdc++.h>
 using namespace std;
 
 void DecimalToHexa(int Dno)
 {
-    int i,rem[10];
+    int i,rem[10],x=1,ans=0;
     for(i=0;Dno>=16;i++)
     {
         rem[i]=Dno%16;
@@ -40,13 +40,15 @@ void DecimalToHexa(int Dno)
         else
         cout<<rem[i];
     }
+    x*=16;
 }
 
 int main()
 {
     int Dno;
-    cout<<"Enter Decimal no: ";
+    while(1){
+    cout<<endl<<"Enter Decimal no: ";
     cin>>Dno;
-    DecimalToHexa(Dno);
+    DecimalToHexa(Dno);}
     return 0;
 }
