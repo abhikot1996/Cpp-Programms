@@ -14,7 +14,7 @@ int main()
     for(int i=0;i<size;i++)
     {
         // if(array[i]>maxNo)
-        //     maxNo=array[i]; 
+        //     {maxNo=array[i];} 
         // else if(array[i]<minNo)
         //     minNo=array[i];
         maxNo = max(maxNo,array[i]);
@@ -22,4 +22,5 @@ int main()
     }
     cout<<"Maximum no is: "<<maxNo<<endl;
     cout<<"Minimum no is: "<<minNo;
+    return 0;
 }

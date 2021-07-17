@@ -36,7 +36,6 @@ int main()
         add+=array[i];        
     }
     cout<<add;
-    
-    
+        
     return 0;
 }
