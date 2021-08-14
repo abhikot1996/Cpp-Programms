@@ -3,35 +3,59 @@ using namespace std;
 
 int main()
 {
-    int size,i,j,k;
-    
+    int size,NoOfSub=0,sum;
     cout<<"Enter size of array: ";
     cin>>size;
     int array[size];
-    for(int l=0;l<size;l++)
-    {   cin>>array[l];  }
+    for(int i=0;i<size;i++)
+    {cin>>array[i];}
     cout<<"Subarrays,"<<endl;
-    for(i=0;i<size;i++)
-    {   for(j=i;j<size;j++)
-        {   int sum=0;
-            for(k=i;k<=j;k++)
-            {   
-                cout<<array[k]; 
-            } 
-            cout<<" | ";           
-        }        
+    for(int i=0;i<size;i++)
+    {
+        for(int j=i;j<size;j++)
+        {   
+            for(int k=i;k<=j;k++)
+            {
+                cout<<array[k];
+                
+            }
+            cout<<" | "; 
+            NoOfSub++;           
+        }
     }
-    cout<<endl<<"Sum of Subarrays,"<<endl;
-     for(i=0;i<size;i++)
-    {   for(j=i;j<size;j++)
-        {   int sum=0;
-            for(k=i;k<=j;k++)
-            {   
-                sum=array[k]+sum;  
-            }          
-            cout<<sum;
-            cout<<" | ";
-        }        
-    }     
+    cout<<endl<<"No of subarrays is: "<<NoOfSub;
+    cout<<endl<<"Sum of subarrays,"<<endl;
+    for(int i=0;i<size;i++)
+    {
+        sum=0;
+        for(int j=i;j<size;j++)
+        {          
+            sum=sum+array[j];
+            cout<<sum<<" | ";
+        }
+    }
     return 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
