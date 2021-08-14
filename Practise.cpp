@@ -677,7 +677,7 @@
 // //  4321234
 // // 543212345
 
-// 31) Print dianond using star: Given n, print diamond with 2*n row.
+// 31) Print diamond using star: Given n, print diamond with 2*n row.
 // #include<bits/stdc++.h>
 // using namespace std;
 // int main()
@@ -693,7 +693,7 @@
 //             if(r<=((n*2)/2))
 //                 c>=((n*2)/2)+1-r && c<=((n*2)/2)-1+r?cout<<"*":cout<<" ";
 //             else
-//                 c>=r-((n*2)/2) && c<=(n+(n*2))-r?cout<<"*":cout<<" ";
+//                 c>=r-((n*2)/2) && c<=(n*3)-r?cout<<"*":cout<<" ";
 //         }
 //         cout<<endl;
 //     }}
@@ -715,4 +715,95 @@
 // //    *******
 // //     *****
 // //      ***
+// //       *
+
+// 32) Print Hollow Diamond using star.
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     for(int r=1;r<=10;r++)
+//     {
+//         for(int c=1;c<=9;c++)
+//         {
+//             if(r==1&&c==5)
+//                 cout<<"*";
+//             else if(r==10&&c==5 )
+//                 cout<<"*";
+//             else if(r==2&&c==4 || r==2&&c==6)
+//                 cout<<"*";
+//             else if(r==9&&c==4 || r==9&&c==6)
+//                 cout<<"*";
+//             else if(r==3&&c==3 || r==3&&c==7)
+//                 cout<<"*";
+//             else if(r==8&&c==3 || r==8&&c==7)
+//                 cout<<"*";
+//             else if(r==4&&c==2 || r==4&&c==8)
+//                 cout<<"*";
+//             else if(r==7&&c==2 || r==7&&c==8)
+//                 cout<<"*";
+//             else if(r==5&&c==1 || r==5&&c==9)
+//                 cout<<"*";
+//             else if(r==6&&c==1 || r==6&&c==9)
+//                 cout<<"*";
+//             else
+//                 cout<<" ";
+            
+            
+//         }
+//         cout<<endl;
+//     }
+//     return 0;
+// }
+
+// // o/p
+// //     *
+// //    * *
+// //   *   *
+// //  *     *
+// // *       *
+// // *       *
+// //  *     *
+// //   *   *
+// //    * *
+// //     *
+
+// 33) Print hollow diamond using star: Given n, print diamond with 2*n row.
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     int n;
+//     while(true)
+//     {cout<<"Enter no of (row/2): ";
+//     cin>>n;
+//     for(int r=1;r<=n*2;r++)
+//     {
+//         for(int c=1;c<=(n*2)-1;c++)
+//         {
+//             if(r<=((n*2)/2))
+//                 c==((n*2)/2)+1-r || c==((n*2)/2)-1+r?cout<<"*":cout<<" ";
+//             else
+//                 c==r-((n*2)/2) || c==(n*3)-r?cout<<"*":cout<<" ";
+//         }
+//         cout<<endl;
+//     }}
+//     return 0;
+// }
+
+// // o/p
+// // Enter no of (row/2): 7
+// //       *
+// //      * *
+// //     *   *
+// //    *     *
+// //   *       *
+// //  *         *
+// // *           *
+// // *           *
+// //  *         *
+// //   *       *
+// //    *     *
+// //     *   *
+// //      * *
 // //       *
