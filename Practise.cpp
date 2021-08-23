@@ -363,100 +363,116 @@
 //     return 0;
 // }
 
-// 19) Pro to print solid rectangle.
+// 19) Pro to print solid rectangle
 // #include<bits/stdc++.h>
 // using namespace std;
-
 // int main()
 // {
-//     for(int i=1;i<=5;i++)
+//     int rows,columns;
+//     while(true){
+//     cout<<"Enter no of rows and columns: ";
+//     cin>>rows>>columns;
+//     for(int r=1;r<=rows;r++)
 //     {
-//         for(int j=1;j<=4;j++)
-//         {
+//         for(int c=1;c<=columns;c++)
 //             cout<<"*";
-//         }
 //         cout<<endl;
-//     }
+//     }}
 //     return 0;
 // }
 
 // // o/p
-// // ****
-// // ****
-// // ****
-// // ****
-// // ****
+// // Enter no of rows and columns: 6 10
+// // **********
+// // **********
+// // **********
+// // **********
+// // **********
+// // **********
 
 
 // 20) Print hollow rectangle.
 // #include<bits/stdc++.h>
 // using namespace std;
-
 // int main()
 // {
-//     for(int r=1;r<=5;r++)
+//     int rows,columns;
+//     while(true){
+//     cout<<"Enter no of rows and columns: ";
+//     cin>>rows>>columns;
+//     for(int r=1;r<=rows;r++)
 //     {
-//         for(int c=1;c<=4;c++)
+//         for(int c=1;c<=columns;c++)
 //         {
-//             if(r==1||r==5 || r>=2&&r<=4 && c==1||c==4)
-//                 cout<<"*";            
+//             if(r==1||r==rows || r>1&&r<rows && c==1||c==columns)
+//                 cout<<"*";
 //             else
 //                 cout<<" ";
 //         }
 //         cout<<endl;
-//     }
+//     }}
 //     return 0;
 // }
 
 // // o/p
-// // ****
-// // *  *
-// // *  *
-// // *  *
-// // ****
+// // Enter no of rows and columns: 6 10
+// // **********
+// // *        *
+// // *        *
+// // *        *
+// // *        *
+// // **********
+
 
 // 21) Pro to print half pyramid using stars
 // #include<bits/stdc++.h>
 // using namespace std;
 // int main()
 // {
-//     for(int r=1;r<=5;r++)
+//     int rows;
+//     while(true){
+//     cout<<"Enter no of rows: ";
+//     cin>>rows;
+//     for(int r=1;r<=rows;r++)
 //     {
-//         for(int c=1;c<=5;c++)
-//         {
+//         for(int c=1;c<=rows;c++)
 //             if(c<=r)
 //                 cout<<"*";
-//         }
 //         cout<<endl;
-//     }
+//     }}
 //     return 0;
 // }
 
 // // o/p
+// // Enter no of rows: 5
 // // *
 // // **
 // // ***
 // // ****
 // // *****
 
+
 // 22) Pro to print an Inverted Half pyramid
 // #include<bits/stdc++.h>
 // using namespace std;
 // int main()
 // {
-//     for(int r=1;r<=5;r++)
+//     int rows;
+//     while(true){
+//     cout<<"Enter no of rows: ";
+//     cin>>rows;
+//     for(int r=1;r<=rows;r++)
 //     {
-//         for(int c=1;c<=5;c++)
-//         {
-//             if(c<=6-r)
+//         for(int c=1;c<=rows;c++)
+//             if(c<=(rows+1)-r)
 //                 cout<<"* ";
-//         }
 //         cout<<endl;
-//     }
+//     }}
 //     return 0;
 // }
 
-// o/p
+// // o/p
+// // Enter no of rows: 5
 // // * * * * *
 // // * * * *
 // // * * *
@@ -468,21 +484,24 @@
 // using namespace std;
 // int main()
 // {
-//     for(int r=1;r<=5;r++)
+//     int rows;
+//     while(true){
+//     cout<<"Enter no of rows: ";
+//     cin>>rows;
+//     for(int r=1;r<=rows;r++)
 //     {
-//         for(int c=1;c<=5;c++)
-//         {
-//             if(c>=6-r)
+//         for(int c=1;c<=rows;c++)
+//             if(c>=(rows+1)-r)
 //                 cout<<"*";
 //             else
 //                 cout<<" ";
-//         }
 //         cout<<endl;
-//     }
+//     }}
 //     return 0;
 // }
 
 // // o/p
+// // Enter no of rows: 5
 // //     *
 // //    **
 // //   ***
@@ -494,19 +513,22 @@
 // using namespace std;
 // int main()
 // {
-//     for(int r=1;r<=5;r++)
+//     int rows;
+//     while(true){
+//     cout<<"Enter no of rows: ";
+//     cin>>rows;
+//     for(int r=1;r<=rows;r++)
 //     {
-//         for(int c=1;c<=5;c++)
-//         {
+//         for(int c=1;c<=rows;c++)
 //             if(c<=r)
 //                 cout<<c<<" ";
-//         }
 //         cout<<endl;
-//     }
+//     }}
 //     return 0;
 // }
 
 // // o/p
+// // Enter no of rows: 5
 // // 1
 // // 1 2
 // // 1 2 3
@@ -518,19 +540,22 @@
 // using namespace std;
 // int main()
 // {
-//     for(int r=1;r<=5;r++)
+//     int rows;
+//     while(true){
+//     cout<<"Enter no of rows: ";
+//     cin>>rows;
+//     for(int r=1;r<=rows;r++)
 //     {
-//         for(int c=1;c<=5;c++)
-//         {
-//             if(c<=6-r)
+//         for(int c=1;c<=rows;c++)
+//             if(c<=(rows+1)-r)
 //                 cout<<c<<" ";
-//         }
 //         cout<<endl;
-//     }
+//     }}
 //     return 0;
 // }
 
 // // o/p
+// // Enter no fo rows: 5
 // // 1 2 3 4 5
 // // 1 2 3 4
 // // 1 2 3
@@ -542,21 +567,22 @@
 // using namespace std;
 // int main()
 // {
-//     int no=1;
-//     for(int r=1;r<=5;r++)
+//     int rows;
+//     while(true){
+//     cout<<"Enter no of rows: ";
+//     cin>>rows;
+//     for(int r=1;r<=rows;r++)
 //     {
-//         for(int c=1;c<=5;c++)
-//         {
+//         for(int c=1;c<=rows;c++)
 //             if(c<=r)
-//                 cout<<no<<" ";
-//         }
+//                 cout<<r<<" ";
 //         cout<<endl;
-//         no++;
-//     }
+//     }}
 //     return 0;
 // }
 
 // // o/p
+// // Enter no of rows: 5
 // // 1
 // // 2 2
 // // 3 3 3
@@ -568,21 +594,22 @@
 // using namespace std;
 // int main()
 // {
-//     int no=1;
-//     for(int r=1;r<=5;r++)
+//     int rows;
+//     while(true){
+//     cout<<"Enter no of rows: ";
+//     cin>>rows;
+//     for(int r=1;r<=rows;r++)
 //     {
-//         for(int c=1;c<=5;c++)
-//         {
-//             if(c<=6-r)
-//                 cout<<no<<" ";
-//         }
+//         for(int c=1;c<=rows;c++)
+//             if(c<=(rows+1)-r)
+//                 cout<<r<<" ";
 //         cout<<endl;
-//         no++;
-//     }
+//     }}
 //     return 0;
 // }
 
 // // o/p
+// // Enter no of rows: 5
 // // 1 1 1 1 1
 // // 2 2 2 2
 // // 3 3 3
@@ -594,21 +621,23 @@
 // using namespace std;
 // int main()
 // {
-//     int no=1;
-//     for(int r=1;r<=5;r++)
+//     while(true){
+//     int rows,no=1;
+//     cout<<"Enter no of rows: ";
+//     cin>>rows;
+//     for(int r=1;r<=rows;r++)
 //     {
-//         for(int c=1;c<=5;c++)
-//         {
+//         for(int c=1;c<=rows;c++)
 //             if(c<=r)
 //             {   cout<<no<<" ";
 //                 no++;}
-//         }
 //         cout<<endl;
-//     }
+//     }}
 //     return 0;
 // }
 
 // // o/p
+// // Enter no of rows: 5
 // // 1
 // // 2 3
 // // 4 5 6
@@ -618,24 +647,24 @@
 // 29) Print 0-1 pattern
 // #include<bits/stdc++.h>
 // using namespace std;
-
 // int main()
 // {
-//     int no=1;
-//     for(int r=1;r<=5;r++)
-//     {   no=r%2?no=1:no=0;
-//         for(int c=1;c<=5;c++)
-//         {   if(c<=r)
-//             {   cout<<no<<" ";
-//                 no==1?no--:no++;
-//             }
-//         }
+//     while(true){
+//     int rows;
+//     cout<<"Enter no of rows: ";
+//     cin>>rows;
+//     for(int r=1;r<=rows;r++)
+//     {
+//         for(int c=1;c<=rows;c++)
+//             c<=r   ?   r%2  ?  c%2 ? cout<<1<<" " : cout<<0<<" "  :  c%2 ? cout<<0<<" " : cout<<1<<" "   :   cout<<" "   ;
+//         //         1        2     2.1            2.1              2     2.1            2.1               1                                  
 //         cout<<endl;
-//     }
+//     }}
 //     return 0;
 // }
 
 // // o/p
+// // Enter no of rows: 5
 // // 1
 // // 0 1
 // // 1 0 1
@@ -647,30 +676,31 @@
 // using namespace std;
 // int main()
 // {
-//     for(int r=1;r<=5;r++)
-//     {
-//         int no=r;
-//         for(int c=1;c<=9;c++)
+//     while(true){
+//     int rows;
+//     cout<<"Enter no of rows: ";
+//     cin>>rows;
+//     for(int r=1;r<=rows;r++)
+//     {   int r1=r;
+//         for(int c=1;c<=(rows*2)-1;c++)
 //         {
-//             if(c>=6-r && c<=4+r)
-//             {
-//                 if(c<=5)
-//                     {cout<<no;
-//                     if(c<5)
-//                         no--;}
+//             if(c>=(rows+1)-r && c<=(rows-1)+r)
+//                 if(c<rows)
+//                     {cout<<r1;
+//                      r1--;}
 //                 else
-//                     {no++;
-//                      cout<<no;}
-//             }
+//                     {cout<<r1;
+//                      r1++;}
 //             else
 //                 cout<<" ";
 //         }
 //         cout<<endl;
-//     }
+//     }}
 //     return 0;
 // }
 
 // // o/p
+// // Enter no of rows: 5
 // //     1
 // //    212
 // //   32123
@@ -682,18 +712,24 @@
 // using namespace std;
 // int main()
 // {
-//     int n;
-//     while(true)
-//     {cout<<"Enter no of (row/2): ";
-//     cin>>n;
-//     for(int r=1;r<=n*2;r++)
+//     int rows;
+//     while(true){
+//     cout<<"Enter no of (rows/2): ";
+//     cin>>rows;
+//     for(int r=1;r<=(rows*2);r++)
 //     {
-//         for(int c=1;c<=(n*2)-1;c++)
+//         for(int c=1;c<=((rows*2)-1);c++)
 //         {
-//             if(r<=((n*2)/2))
-//                 c>=((n*2)/2)+1-r && c<=((n*2)/2)-1+r?cout<<"*":cout<<" ";
+//             if(r<=rows)
+//                 {if(c>=(rows+1)-r && c<=(rows-1)+r)
+//                     cout<<"*";
+//                 else
+//                     cout<<" ";}
 //             else
-//                 c>=r-((n*2)/2) && c<=(n*3)-r?cout<<"*":cout<<" ";
+//                 {if(c>=(r-rows) && c<=(rows*2)-(r-rows))
+//                     cout<<"*";
+//                  else
+//                     cout<<" ";}
 //         }
 //         cout<<endl;
 //     }}
@@ -717,79 +753,24 @@
 // //      ***
 // //       *
 
-// 32) Print Hollow Diamond using star.
+// 32) Print hollow diamond using star: Given n, print diamond with 2*n row.
 // #include<bits/stdc++.h>
 // using namespace std;
 // int main()
 // {
-//     for(int r=1;r<=10;r++)
+//     int rows;
+//     while(true){
+//     cout<<"Enter no of(rows/2): ";
+//     cin>>rows;
+//     for(int r=1;r<=(rows*2);r++)
 //     {
-//         for(int c=1;c<=9;c++)
-//         {
-//             if(r==1&&c==5)
-//                 cout<<"*";
-//             else if(r==10&&c==5 )
-//                 cout<<"*";
-//             else if(r==2&&c==4 || r==2&&c==6)
-//                 cout<<"*";
-//             else if(r==9&&c==4 || r==9&&c==6)
-//                 cout<<"*";
-//             else if(r==3&&c==3 || r==3&&c==7)
-//                 cout<<"*";
-//             else if(r==8&&c==3 || r==8&&c==7)
-//                 cout<<"*";
-//             else if(r==4&&c==2 || r==4&&c==8)
-//                 cout<<"*";
-//             else if(r==7&&c==2 || r==7&&c==8)
-//                 cout<<"*";
-//             else if(r==5&&c==1 || r==5&&c==9)
-//                 cout<<"*";
-//             else if(r==6&&c==1 || r==6&&c==9)
-//                 cout<<"*";
-//             else
-//                 cout<<" ";
-            
-            
-//         }
-//         cout<<endl;
-//     }
-//     return 0;
-// }
-
-// // o/p
-// //     *
-// //    * *
-// //   *   *
-// //  *     *
-// // *       *
-// // *       *
-// //  *     *
-// //   *   *
-// //    * *
-// //     *
-
-// 33) Print hollow diamond using star: Given n, print diamond with 2*n row.
-// #include<bits/stdc++.h>
-// using namespace std;
-// int main()
-// {
-//     int n;
-//     while(true)
-//     {cout<<"Enter no of (row/2): ";
-//     cin>>n;
-//     for(int r=1;r<=n*2;r++)
-//     {
-//         for(int c=1;c<=(n*2)-1;c++)
-//         {
-//             if(r<=((n*2)/2))
-//                 c==((n*2)/2)+1-r || c==((n*2)/2)-1+r?cout<<"*":cout<<" ";
-//             else
-//                 c==r-((n*2)/2) || c==(n*3)-r?cout<<"*":cout<<" ";
-//         }
+//         for(int c=1;c<=((rows*2)-1);c++)
+//             r<=rows  ?  c==(rows+1)-r||c==(rows-1)+r ? cout<<"*" : cout<<" "  :  c==(r-rows)||c==(rows*2)-(r-rows) ? cout<<"*" : cout<<" "  ;
 //         cout<<endl;
 //     }}
 //     return 0;
 // }
+
 
 // // o/p
 // // Enter no of (row/2): 7
@@ -807,3 +788,82 @@
 // //     *   *
 // //      * *
 // //       *
+
+// 33) Print hollow diamond inscribed in a rectangle.
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     int rows;
+//     while(true){
+//     cout<<endl<<"Enter no of rows: ";
+//     cin>>rows;
+//     cout<<endl;
+//     if(rows%2==0)
+//     {
+//         for(int r=1;r<=rows;r++)
+//         {
+//             for(int c=1;c<rows;c++)
+//             {
+//                 if(r<=rows/2)
+//                     if(c<=(rows/2)+1-r || c>=((rows/2)-1)+r)
+//                         cout<<"*";
+//                     else
+//                         cout<<" ";
+//                 else
+//                     if(c<=r-(rows/2) || c>=(rows/2)+((rows/2)-(r-(rows/2)))) 
+//                         cout<<"*";
+//                     else
+//                         cout<<" ";  
+//             }
+//             cout<<endl;
+//         }
+//     }
+//     else
+//         for(int r=1;r<=rows;r++)
+//         {
+//             for(int c=1;c<=rows;c++)
+//             {
+//                 if(r<=(rows/2)+1)
+//                     if(c<=(rows/2)+2-r || c>=((rows/2))+r)
+//                         cout<<"*";
+//                     else
+//                         cout<<" ";
+//                 else
+//                     if(c<=r-(rows/2) || c>=rows-(r-((rows/2)+1)))
+//                         cout<<"*";
+//                     else
+//                         cout<<" ";  
+//             }
+//             cout<<endl;
+//         }
+//     }
+//     return 0;
+// }
+
+// // o/p
+
+// // Enter no of rows: 9
+
+// // *********
+// // **** ****
+// // ***   ***
+// // **     **
+// // *       *
+// // **     **
+// // ***   ***
+// // **** ****
+// // *********
+
+// // Enter no of rows: 10
+
+// // *********
+// // **** ****
+// // ***   ***
+// // **     **
+// // *       *
+// // *       *
+// // **     **
+// // ***   ***
+// // **** ****
+// // *********
