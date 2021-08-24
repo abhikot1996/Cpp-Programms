@@ -867,3 +867,268 @@
 // // ***   ***
 // // **** ****
 // // *********
+
+// 34) Print solid Rhombus.
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     int rows;
+//     while(true){
+//     cout<<"Enter no of rows: ";
+//     cin>>rows;
+//     for(int r=1;r<=rows;r++)
+//     {
+//         for(int c=1;c<rows*2;c++)
+//         {
+//             if(c>=(rows+1)-r && c<=(rows+(rows-r)))
+//                 cout<<"*";
+//             else
+//                 cout<<" ";
+//         }
+//         cout<<endl;
+//     }}
+//     return 0;
+// }
+
+// // o/p
+
+// // Enter no of rows: 10
+// //          **********
+// //         **********
+// //        **********
+// //       **********
+// //      **********
+// //     **********
+// //    **********
+// //   **********
+// //  **********
+// // **********
+
+// 35) Print Hollow Rhombus.
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     int rows;
+//     while(true){
+//     cout<<"Enter no of rows: ";
+//     cin>>rows;
+//     for(int r=1;r<=rows;r++)
+//     {
+//         for(int c=1;c<rows*2;c++)
+//         {
+//             if(c>=(rows+1)-r && c<=(rows+(rows-r)))
+//                 if(c==(rows+1)-r||c==(rows+(rows-r)) || r==1||r==rows)
+//                     cout<<"*";
+//                 else
+//                     cout<<" ";
+//             else
+//                 cout<<" ";
+//         }
+//         cout<<endl;
+//     }}
+//     return 0;
+// }
+
+// // o/p
+// // Enter no of rows: 6
+// //      ******
+// //     *    *
+// //    *    *
+// //   *    *
+// //  *    *
+// // ******
+
+// 36) Pyramid pattern for numbers.
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     int rows;
+//     while(true){
+//     cout<<"Enter no of rows: ";
+//     cin>>rows;
+//     for(int r=1;r<=rows;r++)
+//     {
+//         for(int c=1;c<rows*2;c++)
+//         {
+//             if(c>=(rows+1)-r && c<=(rows-1)+r)
+//                 if(rows%2)
+//                     {if(r%2==0 && c%2==0 || r%2 && c%2)
+//                         cout<<r;
+//                     else
+//                         cout<<" ";}
+//                 else
+//                     {if(r%2 && c%2==0 || r%2==0 && c%2)
+//                         cout<<r;
+//                     else
+//                         cout<<" ";}
+//             else
+//                 cout<<" ";
+//         }
+//         cout<<endl;
+//     }}
+//     return 0;
+// }
+
+// // o/p
+// // Enter no of rows: 5
+// //     1
+// //    2 2
+// //   3 3 3
+// //  4 4 4 4
+// // 5 5 5 5 5
+// // Enter no of rows: 6
+// //      1
+// //     2 2
+// //    3 3 3
+// //   4 4 4 4
+// //  5 5 5 5 5
+// // 6 6 6 6 6 6
+
+// 37) Pyramid pattern for numbers - 2  .
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     int rows;
+//     while(true){
+//     cout<<"Enter no of rows: ";
+//     cin>>rows;
+//     for(int r=1;r<=rows;r++)
+//     {   int n=1;
+//         for(int c=1;c<rows*2;c++)
+//         {
+//             if(c>=(rows+1)-r && c<=(rows-1)+r)
+//                 if(rows%2)
+//                     {if(r%2==0 && c%2==0 || r%2 && c%2)
+//                         {cout<<n;
+//                         n++;}
+//                     else
+//                         cout<<" ";}
+//                 else
+//                     {if(r%2 && c%2==0 || r%2==0 && c%2)
+//                         {cout<<n;
+//                         n++;}
+//                     else
+//                         cout<<" ";}
+//             else
+//                 cout<<" ";
+//         }
+//         cout<<endl;
+//     }}
+//     return 0;
+// }
+
+// // o/p
+// // Enter no of rows: 5
+// //     1
+// //    1 2
+// //   1 2 3
+// //  1 2 3 4
+// // 1 2 3 4 5
+// // Enter no of rows: 6
+// //      1
+// //     1 2
+// //    1 2 3
+// //   1 2 3 4
+// //  1 2 3 4 5
+// // 1 2 3 4 5 6
+
+// 38) Print solid butterfly pattern.
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     while(true){
+//     int rows,n=0;
+//     cout<<"Enter no of rows: ";
+//     cin>>rows;
+//     for(int r=1;r<=rows;r++)
+//     {
+//         for(int c=1;c<=rows;c++)
+//         {
+//             if(r<=rows/2)
+//             {
+//                 if(c<=r || c>=(rows+1)-r)
+//                     cout<<"*";
+//                 else
+//                     cout<<" ";
+//             }
+//             else
+//             {
+//                 if(c<=(rows/2)-n || c>(rows/2)+n)
+//                     cout<<"*";
+//                 else
+//                     cout<<" ";
+//             }
+//         }
+//         cout<<endl;
+//         if(r>rows/2)
+//             n++;
+//     }}
+//     return 0;
+// }
+
+// // o/p
+// // Enter no of rows: 10
+// // *        *
+// // **      **
+// // ***    ***
+// // ****  ****
+// // **********
+// // **********
+// // ****  ****
+// // ***    ***
+// // **      **
+// // *        *
+
+
+// 39) Pring hollow butterfly pattern.
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     while(true){
+//     int rows,n=0;
+//     cout<<"Enter no of rows: ";
+//     cin>>rows;
+//     for(int r=1;r<=rows;r++)
+//     {
+//         for(int c=1;c<=rows;c++)
+//         {
+//             if(r<=rows/2)
+//             {
+//                 if(c==1||c==r || c==(rows+1)-r||c==rows)
+//                     cout<<"*";
+//                 else
+//                     cout<<" ";
+//             }
+//             else
+//             {
+//                 if(c==1||c==(rows/2)-n || c==(rows/2)+1+n||c==rows)
+//                     cout<<"*";
+//                 else
+//                     cout<<" ";
+//             }
+//         }
+//         cout<<endl;
+//         if(r>rows/2)
+//             n++;
+//     }}
+//     return 0;
+// }
+
+// // o/p
+// // Enter no of rows: 10
+// // *        *
+// // **      **
+// // * *    * *
+// // *  *  *  *
+// // *   **   *
+// // *   **   *
+// // *  *  *  *
+// // * *    * *
+// // **      **
+// // *        *
