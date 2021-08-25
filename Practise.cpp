@@ -368,13 +368,13 @@
 // using namespace std;
 // int main()
 // {
-//     int rows,columns;
+//     int rows,rowss;
 //     while(true){
-//     cout<<"Enter no of rows and columns: ";
-//     cin>>rows>>columns;
+//     cout<<"Enter no of rows and rowss: ";
+//     cin>>rows>>rowss;
 //     for(int r=1;r<=rows;r++)
 //     {
-//         for(int c=1;c<=columns;c++)
+//         for(int c=1;c<=rowss;c++)
 //             cout<<"*";
 //         cout<<endl;
 //     }}
@@ -382,7 +382,7 @@
 // }
 
 // // o/p
-// // Enter no of rows and columns: 6 10
+// // Enter no of rows and rowss: 6 10
 // // **********
 // // **********
 // // **********
@@ -396,15 +396,15 @@
 // using namespace std;
 // int main()
 // {
-//     int rows,columns;
+//     int rows,rowss;
 //     while(true){
-//     cout<<"Enter no of rows and columns: ";
-//     cin>>rows>>columns;
+//     cout<<"Enter no of rows and rowss: ";
+//     cin>>rows>>rowss;
 //     for(int r=1;r<=rows;r++)
 //     {
-//         for(int c=1;c<=columns;c++)
+//         for(int c=1;c<=rowss;c++)
 //         {
-//             if(r==1||r==rows || r>1&&r<rows && c==1||c==columns)
+//             if(r==1||r==rows || r>1&&r<rows && c==1||c==rowss)
 //                 cout<<"*";
 //             else
 //                 cout<<" ";
@@ -415,7 +415,7 @@
 // }
 
 // // o/p
-// // Enter no of rows and columns: 6 10
+// // Enter no of rows and rowss: 6 10
 // // **********
 // // *        *
 // // *        *
@@ -1132,3 +1132,34 @@
 // // * *    * *
 // // **      **
 // // *        *
+
+
+// 40) Print zig-zag star pattern.
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     while(true){
+//     int rows;
+//     cout<<"Enter no rows: ";
+//     cin>>rows;
+//     for(int r=1;r<=rows;r++)
+//     {
+//         for(int c=1;c<=rows*4;c++)
+//         {
+//             if(c==(rows+1)-r||c==(rows-1)+r || c==((rows*3)-1)-r||c==((rows*3)-3)+r)
+//                 cout<<"*";
+//             else
+//                 cout<<" ";
+//         }
+//         cout<<endl;
+//     }}
+//     return 0;
+// }
+
+// // o/p
+// // Enter no rows: 3
+// //   *   *
+// //  * * * *
+// // *   *   *
+
