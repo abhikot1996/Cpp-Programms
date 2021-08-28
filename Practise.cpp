@@ -1163,3 +1163,165 @@
 // //  * * * *
 // // *   *   *
 
+
+// 41) Check if given no is prime or not.
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     int no,r;
+//     while(true){
+//     cout<<"Enter no: ";
+//     cin>>no;
+//     for(r=2;r<no;r++)
+//     {
+//         if(no%r==0)
+//             break;
+//     }
+//     if(no==r)
+//         cout<<"Prime no"<<endl;
+//     else
+//         cout<<"Not a prime no"<<endl;
+//     }
+// }
+
+// // o/p
+// // Enter no: 7
+// // Prime no
+// // Enter no: 8
+// // Not a prime no
+
+
+// 42)  Print all digits of decimal no in reverse.
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     int dno;
+//     while(true){
+//     cout<<"Enter decimal no: ";
+//     cin>>dno;
+//     int rno=dno;
+//     while(rno>0)
+//     {
+//         int lno=rno%10;
+//         cout<<lno;
+//         rno=rno/10;
+//     }cout<<endl;}return 0;
+// }
+
+// // o/p
+// // Enter decimal no: 1234
+// // 4321
+
+
+// 44) Check if no is Armstrong or not.
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     while(true){
+//     int no,q=0;
+//     cout<<endl<<"Enter no: ";
+//     cin>>no;
+//     int rno=no;
+//     while(rno>0)
+//     {
+//         int lno=rno%10;
+//         q+=lno*lno*lno;
+//         rno=rno/10;
+//     }
+//     if(q==no)
+//         cout<<"Armstrong no";
+//     else
+//         cout<<"Not a Armstrong no";
+//     } return 0;
+// }
+
+// // o/p
+// // Enter no: 153
+// // Armstrong no
+// // Enter no: 155
+// // Not a Armstrong no
+
+
+// 45) Calculating factorial of a number n.
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     while(true){
+//     int no,fact=1;
+//     cout<<"Enter no: ";
+//     cin>>no;
+//     for(int f=no;f>=1;f--)
+//     {
+//         fact*=f;
+//     }
+//     cout<<fact<<endl;
+//     }return 0;
+// }
+
+// // o/p
+// // Enter no: 4
+// // 24
+// // Enter no: 5
+// // 120
+// // Enter no: 6
+// // 720
+
+
+// 46) Print first n terms of Fibonacci Series with starting term as 0,1.
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     while(true){
+//     int a=1,b=0,c=0,no;
+//     cout<<"Enter no: ";
+//     cin>>no;
+//     for(int r=1;r<=no;r++)
+//     {
+//         c=a+b;
+//         a=b;
+//         b=c;
+//         cout<<a<<", ";
+//     }cout<<endl;
+//     }return 0;
+// }
+
+// // o/p
+// // Enter no: 10
+// // 0, 1, 1, 2, 3, 5, 8, 13, 21, 34,
+
+
+// 47) Convert Binary to decimal.
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     while(true){
+//     int Dno,loop=0,cal,add=0;
+//     cout<<"Enter Decimal no: ";
+//     cin>>Dno;
+//     int rno=Dno;
+//     while(rno>0)
+//     {
+//         cal=1;
+//         for(int r=1;r<=loop;r++)
+//         {
+//             cal=2*cal;
+//         }
+//         int lno=rno%10;
+//         add+=lno*cal;
+//         rno=rno/10;
+//         loop++;
+//     }cout<<add<<endl;
+//     }return 0;
+// } 
+
+// // o/p
+// // Enter Decimal no: 101101
+// // 45
+// // Enter Decimal no: 101110
+// // 46
