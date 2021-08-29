@@ -1,15 +1,21 @@
-include<bits/stdc++.h>
+clude<bits/stdc++.h>
 using namespace std;
 int main()
 {
     while(true){
-    int no,fact=1;
-    cout<<"Enter no: ";
-    cin>>no;
-    for(int f=no;f>=1;f--)
+    int Dno;
+    string rem1,rem2="";
+    cout<<"Enter Decimal no: ";
+    cin>>Dno;
+    while(Dno>0)
     {
-        fact*=f;
+        int rem=Dno%2;
+        rem1=to_string(rem);// Converting int to string.
+        rem2=rem2+rem1; // string concatination.
+        Dno=Dno/2;
     }
-    cout<<fact<<endl;
+    for(int r=rem2.length()-1;r>=0;r--)
+        cout<<rem2[r];
+    cout<<endl;
     }return 0;
 }

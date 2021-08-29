@@ -1325,3 +1325,210 @@
 // // 45
 // // Enter Decimal no: 101110
 // // 46
+
+
+// 48) Convert Decimal to Binary.
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     while(true){
+//     int Dno;
+//     string rem1,rem2="";
+//     cout<<"Enter Decimal no: ";
+//     cin>>Dno;
+//     while(Dno>0)
+//     {
+//         int rem=Dno%2;
+//         rem1=to_string(rem);// Converting int to string.
+//         rem2=rem2+rem1; // string concatination.
+//         Dno=Dno/2;
+//     }
+//     for(int r=rem2.length()-1;r>=0;r--)
+//         cout<<rem2[r];
+//     cout<<endl;
+//     }return 0;
+// }
+
+// // o/p
+// // Enter Decimal no: 45
+// // 101101
+
+
+// 49) Print prime no b/w given numbers.
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     while(true){
+//     int startNo,endNo,count=0;
+//     cout<<"Enter Start and end no: ";
+//     cin>>startNo>>endNo;
+//     cout<<"Prime numbers are,"<<endl;
+//     for(int a=startNo;a<=endNo;a++)
+//     {   int b;
+//         for(b=2;b<a;b++)
+//         {
+//             if(a%b==0)
+//                 break;
+//         }
+//         if(b==a)
+//             {cout<<a<<",";
+//             count++;}
+//     }
+//     cout<<endl;
+//     cout<<"Total Prime numbers: "<<count<<endl;
+//     }return 0;
+// }
+
+// // o/p
+// // Enter Start and end no: 2 20
+// // Prime numbers are,
+// // 2,3,5,7,11,13,17,19,
+// // Total Prime numbers: 8
+
+
+// 50) Write a program to print all the digits of a positive decimal numbers from right to left.
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     while(true){
+//     int Dno;
+//     cout<<"Enter Decimal no: ";
+//     cin>> Dno;
+//     while(Dno>0)
+//     {
+//         int lno=Dno%10;
+//         cout<<lno<<endl;
+//         Dno=Dno/10;
+//     }}return 0;
+// }
+
+// // o/p
+// // Enter Decimal no: 4867
+// // 7
+// // 6
+// // 8
+// // 4
+
+
+// 51) Program to print reverse no.
+// #include<bits/stdc++.h>
+// using namespace std; 
+// int main()
+// {
+//     while(true){
+//     int no;
+//     cout<<"Enter no: ";
+//     cin>>no;
+//     while(no>0)
+//     {
+//         int lno=no%10;
+//         cout<<lno;
+//         no=no/10;
+//     }cout<<endl;}return 0;
+// }
+
+// // o/p
+// // Enter no: 5467
+// // 7645
+
+// 52) Program to find Armstron numbers b/w given numbers.
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     while(true){
+//     int sno,eno,no1,ifarm,count=0;
+//     cout<<"Enter start and end no: ";
+//     cin>>sno>>eno;
+//     cout<<"Armstrong numbers,"<<endl;
+//     for(int a=sno;a<=eno;a++)
+//     {   no1=a;ifarm=0;
+//         while(no1>0)
+//         {
+//             int lno=no1%10;
+//             ifarm+=lno*lno*lno;
+//             no1=no1/10;
+//         }
+//         if(a==ifarm)
+//             {cout<<a<<" ";
+//              count++;}
+//     }
+//     cout<<endl;
+//     cout<<"Total Armstrong numbers: "<<count<<endl;
+//     }
+//     return 0;
+// }
+
+// // o/p
+// // Enter start and end no: 1 1000
+// // Armstrong numbers,
+// // 1 153 370 371 407
+// // Total Armstrong numbers: 5
+
+
+// 53) Program to print ASCII values of any given character.
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     while(true){
+//     char c;
+//     cout<<"Enter character: ";
+//     cin>>c;
+//     cout<<"ASCII value of "<<c<<" : "<<(int)c;
+//     cout<<endl;
+//     }
+//     return 0;
+// }
+
+// // o/p
+// // Enter character: A
+// // ASCII value of A : 65
+
+
+// 54) Program to print all factors of number.
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     while(true){
+//     int no;
+//     cout<<"Enter no: ";
+//     cin>>no;
+//     for(int f=1;f<=no;f++)
+//     {
+//         if(no%f==0)
+//             cout<<f<<" ";
+//     }cout<<endl;}
+//     return 0;
+// }
+
+// // o/p
+// // Enter no: 50
+// // 1 2 5 10 25 50
+
+
+// 55) Program to print factorial of given number.
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     while(true){
+//     int no,fact=1;
+//     cout<<"Enter no: ";
+//     cin>>no;
+//     for(int f=no;f>=1;f--)
+//     {
+//         fact=f*fact;
+//     }
+//     cout<<fact;
+//     cout<<endl;
+//     }return 0;
+// }
+
+// // o/p
+// // Enter no: 4
+// // 24
