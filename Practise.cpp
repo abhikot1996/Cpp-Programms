@@ -1245,7 +1245,7 @@
 // // Not a Armstrong no
 
 
-// 45) Calculating factorial of a number n.
+// 45) Calculating fact of a number n.
 // #include<bits/stdc++.h>
 // using namespace std;
 // int main()
@@ -1511,7 +1511,7 @@
 // // 1 2 5 10 25 50
 
 
-// 55) Program to print factorial of given number.
+// 55) Program to print fact of given number.
 // #include<bits/stdc++.h>
 // using namespace std;
 // int main()
@@ -1532,3 +1532,175 @@
 // // o/p
 // // Enter no: 4
 // // 24
+
+
+// 56) Program to add two numbers using functions.
+// #include<bits/stdc++.h>
+// using namespace std;
+// int add(int a,int b)
+// {
+//     return a+b;
+// }
+// int main()
+// {
+//     int a,b;
+//     cout<<"Enter two numbers: ";
+//     cin>>a>>b;
+//     cout<<add(a,b);
+//     return 0;
+// } 
+
+// // o/p
+// // Enter two numbers: 5 5
+// // 10
+
+
+// 57) Program to print given no using functions.
+// #include<bits/stdc++.h>
+// using namespace std;
+// void givenNo(int no)
+// {
+//     cout<<no;
+//     return ;
+// }
+// int main()
+// {
+//     int no;
+//     cout<<"Enter no: ";
+//     cin>>no;
+//     cout<<(no);
+//     return 0;
+// }
+
+// // o/p
+// // Enter no: 50
+// // 50
+
+
+// 58) Program to print all prime numbers between given 2 numbers using function.
+// #include<bits/stdc++.h>
+// using namespace std;
+// bool PrimeNo(int P)
+// {
+//         int Q;
+//         for(Q=2;Q<P;Q++)
+//         {
+//             if(P%Q==0)
+//                 return false;
+//         }
+//         return true;        
+// }
+// int main()
+// {
+//     while(true){
+//     int sNo,eNo;
+//     cout<<"Enter Start and End numbers: ";
+//     cin>>sNo>>eNo;
+//     for(int P=sNo;P<=eNo;P++)
+//     {
+//         if(PrimeNo(P))
+//             cout<<P<<" ";
+//     }
+//     cout<<endl;    
+//     }return 0;
+// }
+
+// // o/p
+// // Enter Start and End numbers: 2 20
+// // 2 3 5 7 11 13 17 19
+
+
+// 59) Program to print Fibonacci sequence using function.
+// #include<bits/stdc++.h>
+// using namespace std;
+// int Fibonacci(int no)
+// {
+//     int a=0,b=1,c=0;
+//     for(int f=1;f<=no;f++)
+//         {cout<<a<<" ";    
+//         c=a+b;
+//         a=b;
+//         b=c;}        
+//     return 0;
+// }
+// int main()
+// {
+//     while(true){
+//     int no;
+//     cout<<"Enter no: ";
+//     cin>>no;
+//     Fibonacci(no);
+//     cout<<endl;
+//     }return 0;
+// }
+
+// // o/p
+// // Enter no: 10
+// // 0 1 1 2 3 5 8 13 21 34
+
+
+// 60) Program to find fact of given no using function.
+// #include<bits/stdc++.h>
+// using namespace std;
+// int fact(int no)
+// {
+//     int fact=1;
+//     for(int f=1;f<=no;f++)
+//         fact*=f;
+//     return fact;
+
+// }
+// int main()
+// {
+//     while(true){
+//     int no;
+//     cout<<"Enter no: ";
+//     cin>>no;
+//     cout<<fact(no);
+//     cout<<endl;
+//     }return 0;
+// }
+
+// // o/p
+// // Enter no: 6
+// // 720
+
+
+// 61) Program to print binary coefficient (nCr).
+// #include<bits/stdc++.h>
+// using namespace std;
+// int factorial(int no)
+// {
+//     int fact=1;
+//     for(int f=2;f<=no;f++)
+//         fact*=f;
+//     return fact;
+// }
+// int main()
+// {
+//     while(true){
+//     int n,r;
+//     cout<<"Enter values of n and r: ";
+//     cin>>n>>r;
+//     cout<<factorial(n)/((factorial(n-r))*factorial(r));
+//     cout<<endl;
+//     }
+//     return 0;
+// }
+
+// // o/p
+// // Enter values of n and r: 7 4
+// // 35
+
+// Binary coefficient(Binomial coefficient)
+// Formula,
+//          (nCr = n! / ((n-r)! * r!))
+// e.g,
+    // 7C4 = (7! / ((7-4)! * 4!))
+    //     = (7*6*5*4*3*2*1 / (3! * 4!))
+    //     = (5040 / (6*24))
+    //     = (5040 / 144)
+    //     = 35
+
+
+// 62) 
