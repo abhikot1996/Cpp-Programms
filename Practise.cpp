@@ -2279,4 +2279,163 @@
 // //    Sum of Binary no: 11010010
 
 
-// 76) 
+// 76) Program to input values in array.
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     int size;
+//     cout<<"Enter size of array: ";
+//     cin>>size;
+//     int array[size];
+//     cout<<"Enter values of array: ";
+//     for(int a=1;a<=size;a++)
+//         cin>>array[a];
+//     cout<<"Values of array: ";
+//     for(int b=1;b<=size;b++)
+//         cout<<array[b]<<" ";
+//     return 0;
+// }
+
+// // o/p
+// // Enter size of array: 5
+// // Enter values of array: 89 99 80 88 12
+// // Values of array: 89 99 80 88 12
+
+
+// 77) Pro to find max and min values in array.
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     while(true){
+//     int size,maxNo=INT_MIN,minNo=INT_MAX;
+//     cout<<"Enter size of array: ";
+//     cin>>size;
+//     int array[size];
+//     for(int loop=1;loop<=size;loop++)
+//         cin>>array[loop];
+//     for(int loop=1;loop<=size;loop++)
+//     {
+//         if(maxNo<array[loop])
+//             maxNo=array[loop];
+//         if(minNo>array[loop])
+//                 minNo=array[loop];
+//         // maxNo=max(maxNo,array[loop]);
+//         // minNo=min(minNo,array[loop]);
+//     }
+//     cout<<"Max no: "<<maxNo<<endl;
+//     cout<<"Min no: "<<minNo<<endl;
+//     }
+//     return 0;
+// }
+
+// // o/p
+// // Enter size of array: 10
+// // 586
+// // 549
+// // 600
+// // 483
+// // 100
+// // 252
+// // 384
+// // 259
+// // 490
+// // 143
+// // Max no: 600
+// // Min no: 100
+
+
+// 78) Program to sum of values of array.
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     while(true){
+//     int size,sum=0;
+//     cout<<"Enter size of array: ";
+//     cin>>size;
+//     int array[size];
+//     for(int l=1;l<=size;l++)
+//         cin>>array[l];
+//     for(int l=1;l<=size;l++)
+//     {
+//         sum+=array[l];
+//     }
+//     cout<<"Sum are: "<<sum<<endl;
+//     }
+//     return 0;
+// }
+
+// // o/p
+// // Enter size of array: 10
+// // 50
+// // 100
+// // 50
+// // 300
+// // 250
+// // 50
+// // 50
+// // 50
+// // 50
+// // 50
+// // Sum are: 1000
+
+
+// 79) Program to find kids with greatest no of candies using array.
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     while(true){
+//     int NoOfKids,GNoOfCandies=INT_MIN, temp=0;
+//     cout<<"Enter no of kids: ";
+//     cin>>NoOfKids;
+//     int NoOfCandies[NoOfKids];
+//     string NameOfKids[NoOfKids],GNameOfKid;
+//     for(int loop=0;loop<NoOfKids;loop++)
+//     {
+//         temp++;
+//         cout<<temp<<".kid name: ";
+//         cin>> NameOfKids[loop];
+//         cout<<"No of candies: ";
+//         cin>>NoOfCandies[loop];
+//         cout<<endl;
+//         if(GNoOfCandies<NoOfCandies[loop])
+//         {   GNoOfCandies=NoOfCandies[loop];
+//             GNameOfKid=NameOfKids[loop];}
+//     }
+//     cout<<"Kid with greatest no of Candies,"<<endl;
+//     cout<<temp<<".Name: "<<GNameOfKid<<endl;
+//     cout<<"No of candies: "<<GNoOfCandies<<endl;
+//     cout<<endl;
+//     }
+//     return 0;
+// }
+
+// // o/p
+// // Enter no of kids: 6
+// // 1.kid name: Shubhra
+// // No of candies: 200
+
+// // 2.kid name: Anvi
+// // No of candies: 190
+
+// // 3.kid name: Shlok
+// // No of candies: 210
+
+// // 4.kid name: Arav
+// // No of candies: 150
+
+// // 5.kid name: Anvit
+// // No of candies: 180
+
+// // 6.kid name: Amey
+// // No of candies: 175
+
+// // Kid with greatest no of Candies,
+// // 6.Name: Shlok
+// // No of candies: 210
+
+
+// 80) 
