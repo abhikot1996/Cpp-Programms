@@ -9,7 +9,7 @@
 //     return 0;
 // }
 
-// 2) Pro to check given no is even or odd.
+// 2) Pro to checK given no is even or odd.
 
 // #include<bits/stdc++.h>
 // using namespace std;
@@ -29,7 +29,7 @@
 //     return 0;
 // }
 
-// 3) Pro to check max and min no among to numbers.
+// 3) Pro to checK max and min no among to numbers.
 
 // #include<bits/stdc++.h>
 // using namespace std;
@@ -70,7 +70,7 @@
 //     return 0;
 // }
 
-// 5) Pro to check if triangle is Scalene, Isosceles or Equilateral.
+// 5) Pro to checK if triangle is Scalene, Isosceles or Equilateral.
 
 // #include<bits/stdc++.h>
 // using namespace std;
@@ -90,7 +90,7 @@
 //     return 0;
 // }
 
-// 6) Pro to check given alphabet is vowel or consonant.
+// 6) Pro to checK given alphabet is vowel or consonant.
 
 // #include<bits/stdc++.h>
 // using namespace std;
@@ -247,7 +247,7 @@
 //     return 0;
 // }
 
-// 15) Pro to check given no is prime or not (using break).
+// 15) Pro to checK given no is prime or not (using breaK).
 // #include<bits/stdc++.h>
 // using namespace std;
 
@@ -261,7 +261,7 @@
 //         if(no%i==0)
 //         {
 //             cout<<'Not a Prime no.';
-//             break;
+//             breaK;
 //         }
 //     }
 //     if(i==no)
@@ -282,7 +282,7 @@
 //         for(j=2;j<Lno;j++)
 //         {
 //             if(i%j==0)
-//                 break;
+//                 breaK;
 //         }
 //         if(i==j)
 //             cout<<i<<' ';
@@ -308,19 +308,19 @@
 //     {
 //         case 1:
 //                 cout<<'Addition: '<<no1+no2;
-//                 break;
+//                 breaK;
 //         case 2:
 //                 cout<<'Subcout<<ction: '<<no1-no2;
-//                 break;
+//                 breaK;
 //         case 3: 
 //                 cout<<'Multiplication: '<<no1*no2;
-//                 break;
+//                 breaK;
 //         case 4:
 //                 cout<<'Division: '<<no1/no2;
-//                 break;
+//                 breaK;
 //         case 5:
 //                 cout<<'Remainder: '<<no1%no2;
-//                 break;
+//                 breaK;
 //         case 6: 
 //                 exit(0);
 //         default:
@@ -344,19 +344,19 @@
 //     {
 //         case 'a':
 //             cout<<'Vowel';
-//             break;
+//             breaK;
 //         case 'e':
 //             cout<<'Vowel';
-//             break;
+//             breaK;
 //         case 'i':
 //             cout<<'Vowel';
-//             break;
+//             breaK;
 //         case 'o':
 //             cout<<'Vowel';
-//             break;
+//             breaK;
 //         case 'u':
 //             cout<<'Vowel';
-//             break;
+//             breaK;
 //         default:
 //             cout<<'Consonant';
 //     }
@@ -1164,7 +1164,7 @@
 // // *   *   *
 
 
-// 41) Check if given no is prime or not.
+// 41) ChecK if given no is prime or not.
 // #include<bits/stdc++.h>
 // using namespace std;
 // int main()
@@ -1176,7 +1176,7 @@
 //     for(r=2;r<no;r++)
 //     {
 //         if(no%r==0)
-//             break;
+//             breaK;
 //     }
 //     if(no==r)
 //         cout<<'Prime no'<<endl;
@@ -1215,7 +1215,7 @@
 // // 4321
 
 
-// 44) Check if no is Armcout<<ng or not.
+// 44) ChecK if no is Armcout<<ng or not.
 // #include<bits/stdc++.h>
 // using namespace std;
 // int main()
@@ -1370,7 +1370,7 @@
 //         for(b=2;b<a;b++)
 //         {
 //             if(a%b==0)
-//                 break;
+//                 breaK;
 //         }
 //         if(b==a)
 //             {cout<<a<<',';
@@ -1846,7 +1846,7 @@
 // // a:20  b:10
 
 
-// 66) Program to check a person is eligible for voting or not by comparing his age using function.
+// 66) Program to checK a person is eligible for voting or not by comparing his age using function.
 // #include<bits/stdc++.h>
 // using namespace std;
 // bool Comp_age(int age)
@@ -1913,7 +1913,7 @@
 // // 55
 
 
-// 68) Program to check pythagorian triplet.
+// 68) Program to checK pythagorian triplet.
 // #include<bits/stdc++.h>
 // using namespace std;
 // bool ifPythagorianTriplet(int a,int b,int c)
@@ -2382,21 +2382,21 @@
 // // Sum are: 1000
 
 
-// 79) Program to find kids with greatest no of candies using array.
+// 79) Program to find Kids with greatest no of candies using array.
 // #include<bits/stdc++.h>
 // using namespace std;
 // int main()
 // {
 //     while(true){
 //     int NoOfKids,GNoOfCandies=INT_MIN, temp=0;
-//     cout<<"Enter no of kids: ";
+//     cout<<"Enter no of Kids: ";
 //     cin>>NoOfKids;
 //     int NoOfCandies[NoOfKids];
 //     string NameOfKids[NoOfKids],GNameOfKid;
 //     for(int loop=0;loop<NoOfKids;loop++)
 //     {
 //         temp++;
-//         cout<<temp<<".kid name: ";
+//         cout<<temp<<".Kid name: ";
 //         cin>> NameOfKids[loop];
 //         cout<<"No of candies: ";
 //         cin>>NoOfCandies[loop];
@@ -2414,28 +2414,367 @@
 // }
 
 // // o/p
-// // Enter no of kids: 6
-// // 1.kid name: Shubhra
+// // Enter no of Kids: 6
+// // 1.Kid name: Shubhra
 // // No of candies: 200
 
-// // 2.kid name: Anvi
+// // 2.Kid name: Anvi
 // // No of candies: 190
 
-// // 3.kid name: Shlok
+// // 3.Kid name: ShloK
 // // No of candies: 210
 
-// // 4.kid name: Arav
+// // 4.Kid name: Arav
 // // No of candies: 150
 
-// // 5.kid name: Anvit
+// // 5.Kid name: Anvit
 // // No of candies: 180
 
-// // 6.kid name: Amey
+// // 6.Kid name: Amey
 // // No of candies: 175
 
 // // Kid with greatest no of Candies,
-// // 6.Name: Shlok
+// // 6.Name: ShloK
 // // No of candies: 210
 
 
-// 80) 
+// 80) Program to Linear search in array.
+// #include<bits/stdc++.h>
+// using namespace std;
+// int LinearSearch(int size,int array[],int valuets)
+// {
+//     for(int e=0;e<size;e++)
+//         if(array[e]==valuets)
+//             return e;
+//     return -1;
+// }
+
+// int main()
+// {
+//     while(true){
+//     int size,valuets;
+//     cout<<"Enter size of array: ";
+//     cin>>size;
+//     int array[size];
+//     cout<<"Enter values of array,"<<endl;
+//     for(int e=0;e<size;e++)
+//         cin>>array[e];
+//     cout<<"Enter value to search: ";
+//     cin>>valuets;
+//     cout<<LinearSearch(size,array,valuets)<<endl;
+//     }
+//     return 0;
+// }
+
+// // o/p
+// // Enter size of array: 6
+// // Enter values of array,
+// // 12
+// // 18
+// // 20
+// // 48
+// // 8
+// // 10
+// // Enter value to search: 20
+// // 2
+// // Enter size of array: 6
+// // Enter values of array,
+// // 12
+// // 18
+// // 20
+// // 42
+// // 8
+// // 10
+// // Enter value to search: 50
+// // -1
+
+
+// 81) Program to binary search in array.
+// #include<bits/stdc++.h>
+// using namespace std;
+// int BinarySearch(int size,int array[],int KeyToSearch)
+// {
+//     int s=0,e=size,mid;
+//     while(s<=e)
+//     {
+//         int mid=(s+e)/2;
+//         if(KeyToSearch==array[mid])
+//             return mid;
+//         else if(KeyToSearch<array[mid])
+//             e=mid-1;
+//         else
+//             s=mid+1;
+//     }
+//     return -1;
+// }
+
+// int main()
+// {
+//     while(true){
+//     int size,KeyToSearch;
+//     cout<<"Enter size of array: ";
+//     cin>>size;
+//     int array[size];
+//     cout<<"Enter elements of array,"<<endl;
+//     for(int e=0;e<size;e++)
+//         cin>>array[e];
+//     cout<<"Enter Key to search: ";
+//     cin>>KeyToSearch;
+//     cout<<BinarySearch(size,array,KeyToSearch)<<endl;
+//     }
+//     return 0;
+// }
+
+// // o/p
+// // Enter size of array: 12
+// // Enter elements of array,
+// // 10
+// // 20
+// // 30
+// // 40
+// // 50
+// // 60
+// // 70
+// // 80
+// // 90
+// // 100
+// // 110
+// // 120
+// // Enter Key to search: 20
+// // 1
+// // Enter size of array: 12
+// // Enter elements of array,
+// // 10
+// // 20
+// // 30
+// // 40
+// // 50
+// // 60
+// // 70
+// // 80
+// // 90
+// // 100
+// // 110
+// // 120
+// // Enter Key to search: 40
+// // 3
+// // Enter size of array: 12
+// // Enter elements of array,
+// // 10
+// // 20
+// // 30
+// // 40
+// // 50
+// // 60
+// // 70
+// // 80
+// // 90
+// // 100
+// // 110
+// // 120
+// // Enter Key to search: 80
+// // 7
+
+
+// 82) Selection sorting in array.
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     while(true){
+//     int size,min,inmin;
+//     cout<<"Enter size of array: ";
+//     cin>>size;
+//     int arr[size];
+//     cout<<"Enter elements of array, "<<endl;
+//     for(int e=0;e<size;e++)
+//         cin>>arr[e];
+//     cout<<"Sorted array,"<<endl;
+//     for(int a=0;a<size;a++)
+//     {
+//         min=INT_MAX;
+//         for(int b=a;b<size;b++)
+//             if(arr[b]<min)
+//             {   min=arr[b];
+//                 inmin=b;}
+//         for(int c=a;c<size;c++)
+//             if(arr[c]==min)
+//             {   int temp=arr[a];
+//                 arr[a]=arr[inmin];
+//                 arr[inmin]=temp; }        
+//         for(int d=0;d<size;d++)
+//             cout<<arr[d]<<" ";
+//         cout<<endl;
+//     }}return 0;}
+
+// // o/p
+// // Enter size of array: 6
+// // Enter elements of array,
+// // 12 45 23 51 19 8
+// // Sorted array,
+// // 8 45 23 51 19 12
+// // 8 12 23 51 19 45
+// // 8 12 19 51 23 45
+// // 8 12 19 23 51 45
+// // 8 12 19 23 45 51
+// // 8 12 19 23 45 51
+
+
+// 83) Bubble sorting in array.
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     while(true){
+//     int size;
+//     cout<<"Enter size of array: ";
+//     cin>>size;
+//     int arr[size];
+//     cout<<"Enter elements of array,"<<endl;
+//     for(int In=0;In<size;In++)
+//         cin>>arr[In];
+//     for(int a=0;a<size-1;a++)
+//     {
+//         for(int b=0;b<size-a;b++)
+//         {
+//             if(arr[b]>arr[b+1])
+//             {
+//                 int temp=arr[b];
+//                 arr[b]=arr[b+1];
+//                 arr[b+1]=temp;
+//             }
+//         }
+//     }
+//     cout<<"Sorted array,"<<endl;
+//     for(int out=0;out<size;out++)
+//         cout<<arr[out]<<" ";
+//     cout<<endl;
+//     }
+//     return 0;
+// }
+
+// // o/p
+// // Enter size of array: 6
+// // Enter elements of array,
+// // 12 45 23 51 19 8
+// // Sorted array,
+// // 8 12 19 23 45 51
+
+
+// 84) Insertion sorting in array.
+// #include<bits/stdc++.h>
+// using namespace std;
+
+// int main()
+// {
+//     int size;
+//     cout<<"Enter size of array: ";
+//     cin>>size;
+//     int array[size];
+//     for(int i=0;i<size;i++)
+//     {
+//         cin>>array[i];
+//     }
+//     for(int i=1;i<size;i++)
+//     {
+//         int current=array[i];
+//         int ind=i-1;
+//         while(current<array[ind] && ind>=0)
+//         {
+//             array[ind+1]=array[ind];
+//             ind--;
+//         }
+//         array[ind+1]=current;
+//     }
+//     for(int i=0;i<size;i++)
+//     {
+//         cout<<array[i]<<" ";
+//     }
+//     return 0;
+// }
+
+// // o/p
+// // Enter size of array: 6
+// // 12 45 23 51 19 8
+// // 8 12 19 23 45 51
+
+
+// 85) Max till i in array.
+// #include<bits/stdc++.h>
+// using namespace std;
+// int max(int size, int arr[])
+// {
+//     int max=INT_MIN;
+//     for(int a=0;a<size;a++)
+//         {if(arr[a]>max)
+//             max=arr[a];
+//         cout<<max<<endl;}
+//     return 0;
+// }
+// int main()
+// {
+//     while(true){
+//     int size;
+//     cout<<"Enter size of array: ";
+//     cin>>size;
+//     int arr[size];
+//     cout<<"Enter elements of array,"<<endl;
+//     for(int In=0;In<size;In++)
+//         cin>>arr[In];    
+//     max(size,arr);
+//     cout<<endl;
+//     }
+//     return 0;
+// }
+
+// // o/p
+// // Enter size of array: 6
+// // Enter elements of array,
+// // 12 45 23 51 19 8
+// // Max: 51
+
+
+// 86) Sum of subarrays.
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     while(true)
+//     {int size;
+//     cout<<"Enter size of array: ";
+//     cin>>size;
+//     int arr[size];
+//     cout<<"Enter elements of array,"<<endl;
+//     for(int In=0;In<size;In++)
+//         cin>>arr[In];
+//     cout<<"Sub-arrays,"<<endl;
+//     for(int a=0;a<size;a++)
+//     {
+//         for(int b=a;b<size;b++)
+//         {   for(int c=a;c<=b;c++)
+//                 cout<<arr[c];
+//             cout<<" ";}                      
+//     }
+//     cout<<endl<<"Sum of sub array,"<<endl;
+//     for(int a=0;a<size;a++)
+//     {   int add=0;
+//         for(int b=a;b<size;b++)
+//         {    add+=arr[b];
+//             cout<<add<<" ";}
+//     }
+//     cout<<endl;
+//     }
+//     return 0;
+// }
+
+// o/p
+// Enter size of array: 3
+// Enter elements of array,
+// 1 2 2
+// Sub-arrays,
+// 1 12 122 2 22 2
+// Sum of sub array,
+// 1 3 5 2 4 2
+
+
+// 87) 
